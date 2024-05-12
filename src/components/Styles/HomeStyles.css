@@ -1,0 +1,133 @@
+.main{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    /* margin-bottom: 100vh; */
+    overflow: hidden;
+  }
+  
+  .main img{
+    /* object-fit: cover; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .sliderContainer{
+    position: absolute;
+    top: calc(100vh - 290px);
+  }
+  
+  .slider{
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .slider p{
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 146px;
+    font-weight: 500;
+    padding-right: 50px;
+  }
+  
+  .slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  .location{
+    display: flex;
+    color: black;
+    background-color: #fff;
+    position: absolute;
+    top: 12rem;
+    left: -17.3rem;
+    /* left: 0; */
+    transition: 1s ease;
+    border-radius:0 45px 45px 0; 
+    padding: 5px 10px;
+  }
+.location:hover{
+    left: 0;
+}
+
+.location i{
+    font-size: 2.4rem;
+    padding: 11px;
+    margin-left: 1.2rem;
+    margin-top: 4px;
+}
+.location p{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+.home002{
+    color: #fff;
+    position: absolute;
+    top: 9.7rem;
+    transition: 1s ease;
+    padding: 5px 10px;
+    font-size: 2.4rem;
+    left: 25.7rem;
+    font-weight: bolder;
+}
+
+.home002 ul li:hover{
+  scale: 1.1;
+}
+
+ .text03{
+  color: #111;
+  word-spacing: 1.3px;
+  margin-top: 4.5rem;
+}
+
+.text03 h1{
+  font-size: 4rem;
+  font-weight: bolder;
+  letter-spacing: -4px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.text03 p{
+  max-width: 40%;
+  margin-left: 7rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+
+
+.tp01{
+  font-size: 3.4rem;
+  font-weight: 500;
+ margin: 5.6rem 0 0 3rem; 
+
+}
+
+.text101{
+  background-color: #111;
+  min-height: 77vh;
+  color: #fff;
+  text-align: center;
+}
+
+.text101 h4{
+  /* font-family: 'Courier New', Courier, monospace; */
+  padding-top: 2rem;
+}
+.text101 h1{
+  /* font-family: 'Courier New', Courier, monospace; */
+  padding-top: 1.2rem;
+}
+.text101 p{
+  /* font-family: 'Courier New', Courier, monospace; */
+  padding-top: 4rem;
+  max-width: 40%;
+  margin: auto;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,75 @@
+.mihir-nav li {
+  padding: 10px 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+   .name2 {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  p {
+    position: relative;
+    letter-spacing: -2px;
+    word-spacing: 1px;
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    &:nth-of-type(2) {
+      padding-left: 0.3em;
+    }
+    &:nth-of-type(3) {
+      position: absolute;
+      left: 230px;
+      padding-left: 0.3em;
+    }
+  }
+}
+
+.name1:hover {
+  .name2 {
+    // padding-right: 30px;
+
+   .codeBy {
+      transform: translateX(-101%);
+    }
+
+     .dennis {
+      transform: translateX(-121px);
+    }
+
+     .snellenberg {
+      transform: translateX(-132px);
+    }
+  }
+}
+
+.indicator {
+  height: 7px;
+  width: 7px;
+  /* background-color: #383333ad; */
+  position: absolute;
+  border-radius: 50%;
+  top: 78%;
+  left: 50%;
+  transform: scale(0) translateX(-50%);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.mihir-nav li:hover {
+  .indicator {
+    transform: scale(1) translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 998.98px) {
+  .indicator {
+    display: none;
+  }
+}
+
+// .hidden-text {
+//   position: absolute;
+//   left: -10px;
+//   z-index: 1;
+// }

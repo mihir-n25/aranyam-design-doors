@@ -1,0 +1,151 @@
+
+.text01{
+    margin: 10px 4rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.about22 {
+    background: url('../../../public/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 160vh;
+}
+
+.reactCount{
+    position: absolute;
+    right: 15rem;
+}
+
+.count1{
+    font-size: 4rem;
+    color: #111;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.count1 h1{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.reactCount2{
+    position: absolute;
+    left: 48rem;
+    top: 56rem;
+}
+
+.reactCount2 p{
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    max-width: 80%;
+}
+
+.text1{
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: -4px;
+    text-align: center;
+    line-height: 64px;
+}
+
+
+.text002{
+    display: flex;
+    font-size: 1.7rem;
+    color: rgb(95, 92, 92);
+    letter-spacing: 1px;
+    margin: 4rem;
+    word-spacing: 1px;
+}
+
+.text002 p{
+    max-width: 40%;
+    margin-left: 7rem;
+}
+
+.text002 p:nth-child(2){
+    margin-top: 2rem;
+font-size: 1.4rem;
+}
+
+.btn01{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 25rem;
+    top: 70rem;
+    background-color: rgb(132, 132, 249);
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+  font-size: 36px; 
+  font-weight: 300;
+}
+
+.service01 {
+    margin: 1rem 9rem 4rem;
+}
+
+.service01 h1{
+font-size: 4rem;
+    font-weight: 100;
+  
+}
+
+.shop{
+    display: flex;
+    overflow-x: hidden;
+}
+.shop img{
+    margin: 20px;
+}
+
+.owner01{
+    display: flex;
+
+}
+
+.owner01 img{
+    width: 23rem;
+
+}
+
+.owner {
+    margin: 5rem 9rem 8rem;
+}
+
+.owner h1{
+    font-size: 4rem;
+    font-weight: 100;
+  
+}
+
+
+.owner01 p{
+margin-left: 14rem !important; 
+font-size: 1.1rem;
+    color: rgba(48, 46, 46, 0.829);
+    letter-spacing: 1px;
+    margin: 4rem;
+    word-spacing: 1px;
+}
+
+.btn02{
+    padding: 20px 30px;
+    border: none;
+    border-radius:40px; 
+    background-color: rgb(132, 132, 249);;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    position: absolute;
+    top: 239.6rem;
+    right: 25rem;
+}
