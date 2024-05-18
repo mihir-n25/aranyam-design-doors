@@ -1,0 +1,13 @@
+.modal img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.modal span{
+    z-index: 999;
+    font-size: 9rem;
+}
