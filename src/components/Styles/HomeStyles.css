@@ -131,3 +131,9 @@
   margin: auto;
   font-size: 1.2rem;
 }
+
+
+.para1{
+  transform: translateY(90px);
+  opacity: 0;
+}

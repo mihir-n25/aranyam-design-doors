@@ -7,6 +7,7 @@ import SlidingImages from "./Secondary/SlidningImages";
 import PreLoader from "./Secondary/PreLoader";
 import {useInView , motion} from 'framer-motion'
 import { slideUp , opacity } from "./Secondary/anim2";
+import { animateWithGsap } from "../components/Utils/animation_g";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -58,9 +59,12 @@ const Home = () => {
     xPercent += 0.1 * direction;
   };
 
+  //animation
+  animateWithGsap(".para1" , {y : 0 , opacity : 1})
+
   return (
     <Main>
-      {isLoading && <PreLoader />}
+      {/* {isLoading && <PreLoader />} */}
       <div className="main">
         <img src="Main.jpeg" alt="home1" />
         <div className="sliderContainer">
@@ -89,12 +93,12 @@ const Home = () => {
             <br/> as possible
             </motion.h1>
             <div style={{display : 'flex'}} >
-          <motion.p variants={slideUp} animate={isInView ? "open" : "closed"}>
+          <p className="para1">
           Step into a world where quality meets affordability effortlessly. Our doors boast superior craftsmanship and security without compromising on price. Elevate your home with our exquisite designs and unmatched value
-          </motion.p>
-          <motion.p variants={slideUp} animate={isInView ? "open" : "closed"}>
+          </p>
+          <p className="para1">
           Discover premium doors at unbeatable prices. Elevate your space with style and security, without breaking the bank.
-          </motion.p>
+          </p>
           </div>
         </div>
       </div>
