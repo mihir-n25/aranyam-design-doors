@@ -74,7 +74,7 @@ export default function SlidingImages() {
                             return <div key={index} className="project" style={{backgroundColor: project.color}} >
                                 <div key={index} className="imageContainer">
                                     <img 
-                                    // fill={true}
+                                    fill={true}
                                     alt="image"
                                     src={project.src}/>
                                 </div>
