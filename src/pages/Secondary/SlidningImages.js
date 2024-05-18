@@ -5,38 +5,38 @@ import '../../components/Styles/SlidingImages.scss'
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "service01.png"
+        src: "/images/Designer (1).jpeg"
     },
     {
         color: "#d6d7dc",
-        src: "service02.png"
+        src: "/images/Designer.jpeg"
     },
     {
         color: "#e3e3e3",
-        src: "service01.png"
+        src: "/images/Designer (3).jpeg"
     },
     {
         color: "#d4e3ec",
-        src: "mihir2.png"
+        src: "/images/Designer (4).jpeg"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "/mihir2.png"
+        src: "/images/Designer (8).jpeg"
     },
     {
         color: "#e5e0e1",
-        src: "service01.png"
+        src: "/images/Designer (5).jpeg"
     },
     {
         color: "#d7d4cf",
-        src: "mihir2.png"
+        src: "/images/Designer (6).jpeg"
     },
     {
         color: "#e1dad6",
-        src: "service02.png"
+        src: "/images/Designer (7).jpeg"
     }
 ]
 
