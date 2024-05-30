@@ -186,6 +186,17 @@ const Work = () => {
           src=""
           />
         </div>
+        <div className="Gcolors">
+          <img 
+          alt="colors-image"
+          src=""/>
+          <img 
+          alt="doors-image"
+          src=""/>
+          <img 
+          alt="construction-image"
+          src=""/>
+        </div>
         <div className="3dDetails">
           <h1>Originals 3D models for designers and architects</h1>
           <p>.max format, version 2024</p>
