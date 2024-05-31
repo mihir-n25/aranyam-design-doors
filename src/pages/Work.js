@@ -202,7 +202,7 @@ const Work = () => {
           <h1>Originals 3D models for designers and architects</h1>
           <p>.max format, version 2024</p>
           <div className="hr"></div>
-          <a>Link to Download</a>
+          <a href="https://disk.yandex.ru/d/hiYLeapXzqSe8Q" target="_blank">Link to Download</a>
         </div>
       </div>
     </Main>

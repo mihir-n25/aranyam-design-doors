@@ -64,7 +64,7 @@ const Home = () => {
 
   return (
     <Main>
-      {/* {isLoading && <PreLoader />} */}
+      {isLoading && <PreLoader />}
       <div className="main">
         <img src="Main.jpeg" alt="home1" />
         <div className="sliderContainer">
