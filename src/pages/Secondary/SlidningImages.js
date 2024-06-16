@@ -15,10 +15,6 @@ const slider1 = [
         color: "#e3e3e3",
         src: "/images/Designer (3).jpeg"
     },
-    {
-        color: "#d4e3ec",
-        src: "/images/Designer (4).jpeg"
-    }
 ]
 
 const slider2 = [
@@ -34,10 +30,6 @@ const slider2 = [
         color: "#d7d4cf",
         src: "/images/Designer (6).jpeg"
     },
-    {
-        color: "#e1dad6",
-        src: "/images/Designer (7).jpeg"
-    }
 ]
 
 export default function SlidingImages() {
@@ -48,8 +40,8 @@ export default function SlidingImages() {
         offset: ["start end", "end start"]
     })
 
-    const x1 = useTransform(scrollYProgress, [0, 1], [0, 150])
-    const x2 = useTransform(scrollYProgress, [0, 1], [0, -150])
+    const x1 = useTransform(scrollYProgress, [0, 1], [0, -150])
+    const x2 = useTransform(scrollYProgress, [0, 1], [0, +150])
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
@@ -62,7 +54,9 @@ export default function SlidingImages() {
                                     <img 
                                     fill={true}
                                     alt={"image"}
-                                    src={project.src}/>
+                                    src={project.src}
+                                    className="imageStyle"
+                                    />
                                 </div>
                             </div>
                         })

@@ -6,8 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SlidingImages from "./Secondary/SlidningImages";
 import PreLoader from "./Secondary/PreLoader";
 import {useInView , motion} from 'framer-motion'
-import { slideUp , opacity } from "./Secondary/anim2";
 import { animateWithGsap } from "../components/Utils/animation_g";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -64,7 +64,7 @@ const Home = () => {
 
   return (
     <Main>
-      {isLoading && <PreLoader />}
+      {/* {isLoading && <PreLoader />} */}
       <div className="main">
         <img src="Main.jpeg" alt="home1" />
         <div className="sliderContainer">
@@ -75,7 +75,9 @@ const Home = () => {
         </div>
         <div className="location">
           <p>Located In Bhilwara</p>
-          <i className="fa-solid fa-location-dot"/>
+          <Link to="/contact">
+          <i className="fa-solid fa-location-dot" style={{color : "black"}}/>
+          </Link>
         </div>
         <div className="home002">
           <ul>
@@ -87,11 +89,11 @@ const Home = () => {
       </div>
       <div className="main02" ref={description} >
         <div className="text03">
-          <motion.h1 variants={opacity} animate={isInView ? "open" : "closed"}>
+          <h1>
             We made the purchase 
             <br/>as simple and clear
             <br/> as possible
-            </motion.h1>
+            </h1>
             <div style={{display : 'flex'}} >
           <p className="para1">
           Step into a world where quality meets affordability effortlessly. Our doors boast superior craftsmanship and security without compromising on price. Elevate your home with our exquisite designs and unmatched value

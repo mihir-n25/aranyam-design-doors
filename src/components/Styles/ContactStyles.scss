@@ -49,10 +49,15 @@
       color: #fff;
       padding: 34px 20px;
       box-sizing: border-box;
-      border: #7abef1 solid 2px;
+      border: #fff solid 2px;
       outline: none;
       border-radius: 3px 3px 12px 11px/14px 13px 24px 19px;
     }
+
+    input[type='text']:focus,
+input[type='email']:focus {
+    border-color: #7abef1;
+}
   
     textarea {
       width: 100%;
@@ -65,23 +70,33 @@
       padding: 14px 20px;
       box-sizing: border-box;
       min-height: 150px;
-      border: #7abef1 solid 2px;
+      border: #fff solid 2px;
       border-radius: 3px 3px 12px 11px/14px 13px 24px 19px;
-    }
+
+     }
+
+     textarea:focus{
+      border-color: #7abef1;
+     }
+
+  
   
     .flat-button {
-      color: #7abef1;
+      color: #fff;
       font-size: 31px;
       letter-spacing: -1px;
       text-decoration: none;
       padding: 8px 20px;
-      border: 2px solid #7abef1;
+      border: 2px solid #fff;
       float: left;
       border-radius: 4px;
       background: 0 0;
       float: right;
       text-align: center;
       margin-right: 10px;
+    }
+    .flat-button:hover{
+      border-color: #7abef1;
     }
     
   }

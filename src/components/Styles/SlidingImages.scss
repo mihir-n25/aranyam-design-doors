@@ -10,11 +10,11 @@
         display: flex;
         position: relative;
         gap: 3vw;
-        width: 99vw;
-        left: -10vw;
+        width: 74vw;
+        left: 12vw;
         .project{
-            width: 20rem;
-            height: 15rem;
+            width: 25rem;
+            height: 22rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -24,10 +24,13 @@
                 position: relative;
                 width: 100%;
                 height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img{
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
+                    // object-fit: cover;
+                    width: 120%;
+                    height: 120%;
                 }
             }
         }

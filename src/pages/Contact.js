@@ -73,7 +73,6 @@ const Contact = () => {
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'U', 's']}
               idx={15}
             />
-              {/* <img src='mihir.png' style={{width : '76px' , position : 'absolute' , right : '25rem' , top : '16rem'}}/> */}
             <hr/>
         </div>
         <div style={{display : "flex"}}>

@@ -24,15 +24,15 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mihir-nav" style={{ fontSize: "22px", marginRight: "42px" }}>
-            <Magnetic>
+          <Magnetic>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about" style={{ color: textColor }}>About</NavLink>
+                <NavLink className="nav-link" to="/work" style={{ color: textColor }}>Work</NavLink>
                 <div style={{backgroundColor : indicatorColor}} className='indicator'></div>
               </li>
             </Magnetic>
             <Magnetic>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/work" style={{ color: textColor }}>Work</NavLink>
+                <NavLink className="nav-link" to="/about" style={{ color: textColor }}>About</NavLink>
                 <div style={{backgroundColor : indicatorColor}} className='indicator'></div>
               </li>
             </Magnetic>
