@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.body {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  width: 100%;
+  padding: 50px 100px 50px 100px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+  transition: all 0.2 linear;
+
+  h2 {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0px;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  &:hover {
+    opacity: 0.4;
+
+    h2 {
+      transform: translateX(10px);
+    }
+
+    p {
+      transform: translateX(10px);
+    }
+  }
+}
