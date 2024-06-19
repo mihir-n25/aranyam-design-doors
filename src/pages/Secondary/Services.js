@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../components/Styles/ServiceStyles.scss";
 import Project from "./Project";
+import Model from "./Model";
 
 function Services() {
   const projects = [
@@ -46,6 +47,8 @@ function Services() {
           );
         })}
       </div>
+
+      <Model/>
     </main>
   );
 }

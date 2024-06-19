@@ -8,6 +8,7 @@ const Project = ({index , title , description , setModal}) => {
         <h2>{title}</h2>
         <p>{description}</p>
     </div>
+    
   )
 }
 
