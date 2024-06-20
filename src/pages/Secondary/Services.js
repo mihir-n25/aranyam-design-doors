@@ -7,25 +7,25 @@ function Services() {
   const projects = [
     {
       title: "Hardware",
-      src: "images/Designer (3).jpeg",
-      color: "#fff",
-      description: "yes we have hardware",
-    },
-    {
-      title: "Hardware",
-      src: "/images/Designer (1).jpeg",
-      color: "#111",
-      description: "yes we have hardware",
-    },
-    {
-      title: "Hardware",
       src: "/images/Designer (1).jpeg",
       color: "#000000",
       description: "yes we have hardware",
     },
     {
       title: "Hardware",
-      src: "/images/Designer (1).jpeg",
+      src: "/images/Designer (3).jpeg",
+      color: "#000000",
+      description: "yes we have hardware",
+    },
+    {
+      title: "Hardware",
+      src: "/images/Designer (4).jpeg",
+      color: "#000000",
+      description: "yes we have hardware",
+    },
+    {
+      title: "Hardware",
+      src: "/images/Designer (6).jpeg",
       color: "#000000",
       description: "yes we have hardware",
     },
@@ -48,7 +48,7 @@ function Services() {
         })}
       </div>
 
-      <Model projects={projects} modal={modal}/>
+      <Model modal={modal} projects={projects}/>
     </main>
   );
 }

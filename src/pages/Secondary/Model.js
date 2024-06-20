@@ -9,10 +9,10 @@ const Model = ({projects , modal}) => {
           {
             projects.map((project,index) => {
               const {src , color} = project;
-              return <div key={`modal_${index}`} style={{backgroundColor : color}} className='modal'>
+              return <div className='modalAbout' key={`modal_${index}`} style={{backgroundColor : color}}>
                 <img
                 src={src}
-                width={300}
+                width={100}
                 height={0}
                 alt='Image'
                 />
