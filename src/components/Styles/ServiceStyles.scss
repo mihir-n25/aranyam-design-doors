@@ -44,3 +44,28 @@
     }
   }
 }
+
+.modalContainer{
+  height: 350px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  .modalSlider{
+    height: 100%;
+    width: 100%;
+    
+
+    .modal{
+      position: relative;
+      img{
+        height : auto;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+

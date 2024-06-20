@@ -7,14 +7,14 @@ function Services() {
   const projects = [
     {
       title: "Hardware",
-      src: "/images/Designer (1).jpeg",
-      color: "#000000",
+      src: "images/Designer (3).jpeg",
+      color: "#fff",
       description: "yes we have hardware",
     },
     {
       title: "Hardware",
       src: "/images/Designer (1).jpeg",
-      color: "#000000",
+      color: "#111",
       description: "yes we have hardware",
     },
     {
@@ -48,7 +48,7 @@ function Services() {
         })}
       </div>
 
-      <Model/>
+      <Model projects={projects} modal={modal}/>
     </main>
   );
 }
