@@ -45,7 +45,7 @@
   }
 }
 
-.modalContainer{
+.modalContainer {
   height: 480px;
   width: 400px;
   display: flex;
@@ -53,20 +53,24 @@
   justify-content: center;
   position: absolute;
   overflow: hidden;
+  pointer-events: none;
 }
-  .modalSlider{
-    height: 100%;
-    width: 100%;
-  }
+.modalSlider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
 
-    .modalAbout{
-      position: relative;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-      .modalAbout img{
-        height : auto
-      }
-   
+.modalAbout {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalAbout img {
+  height: auto;
+}
+
+

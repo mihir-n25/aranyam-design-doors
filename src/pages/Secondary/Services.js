@@ -14,7 +14,7 @@ function Services() {
     {
       title: "Hardware",
       src: "/images/Designer (3).jpeg",
-      color: "#000000",
+      color: "blue",
       description: "yes we have hardware",
     },
     {
