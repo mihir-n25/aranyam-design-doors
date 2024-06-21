@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Main from "../components/Layout/Main";
 import "../components/Styles/WorkStyles.scss";
+import {motion} from "framer-motion"
+import gsap from "gsap";
 
 const Work = () => {
   const workImages = [
@@ -69,15 +71,35 @@ const Work = () => {
     },
   ];
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const enterMouseAnimation = {
+    initial : {scale : 0 , x : "-50%" , y : "-50%"},
+    open : {scale : 1 , x : "-50%" , y : "-50%" , transition : {duration : 0.4 , ease : [0.76 , 0 , 0.24 ,1]}},
+    close : {scale : 0 , x : "-50%" , y : "-50%" , transition : {duration : 0.4 ,ease : [0.32 , 0 , 0.67 ,0]}},
+  }
 
-  const handleClick = (imgSrc) => {
-    return setSelectedImage(imgSrc);
-  };
-  const handleClose = () => {
-    return setSelectedImage(null);
-  };
+  const cursorWork = useRef(null)
+  const cursorWorkLabel = useRef(null)
 
+  const [active, setActive] = useState(false)
+
+  useEffect(() => {
+
+    const moveCursorAboutX = gsap.quickTo(cursorWork.current , "left" , {duration : 0.5 , ease : "power3"})
+    const moveCursorAboutY = gsap.quickTo(cursorWork.current , "top" , {duration : 0.5 , ease : "power3"})
+
+    const moveCursorLabelX = gsap.quickTo(cursorWorkLabel.current , "left" , {duration : 0.45 , ease : "power3"})
+    const moveCursorLabelY = gsap.quickTo(cursorWorkLabel.current , "top" , {duration : 0.45 , ease : "power3"})
+
+  window.addEventListener("mousemove" , (e) => {
+    const {clientX , clientY} = e;
+
+    moveCursorAboutX(clientX);
+    moveCursorAboutY(clientY);
+    
+    moveCursorLabelX(clientX);
+    moveCursorLabelY(clientY);
+  })
+  }, [])
 
   return (
     <Main>
@@ -91,7 +113,7 @@ const Work = () => {
           and delivery, please contact the manager - Tel: +381691788177
         </p>
       </div>
-      <div className="imageComponents">
+      <div className="imageComponents" onMouseEnter={() => {setActive(true)}} onMouseLeave={() => {setActive(false)}} >
       {workImages.map((workImage, index) => (
         <div 
           className="image01" 
@@ -103,18 +125,10 @@ const Work = () => {
           <p>{workImage.description}</p>
         </div>
       ))}
-      <div id="custom-cursor"></div>
-        {selectedImage && (
-          <div className="modal">
-            <span onClick={handleClose}>close</span>
-            <img
-              alt="full"
-              src={selectedImage}
-              onClick={() => handleClose}
-            />
-          </div>
-        )}
       </div>
+      <motion.div ref={cursorWork} variants={enterMouseAnimation} initial={"initial"} animate={active ? "open" : "close"} className="workCursor"></motion.div>
+      <motion.div ref={cursorWorkLabel} variants={enterMouseAnimation} initial={"initial"} animate={active ? "open" : "close"} className="workCursorLabel">View</motion.div>
+
       <div className="imageComponents2">
         {workImages2.map((workImage, index) => {
           return (
@@ -123,7 +137,6 @@ const Work = () => {
                 <img
                   alt="work"
                   src={workImage.src}
-                  onClick={() => handleClick(workImage.src)}
                 />
                 <h1>{workImage.title}</h1>
                 <h3>{workImage.price}</h3>
@@ -132,16 +145,6 @@ const Work = () => {
             </>
           );
         })}
-        {selectedImage && (
-          <div className="modal">
-            <span onClick={handleClose}>close</span>
-            <img
-              alt="full"
-              src={selectedImage}
-              onClick={() => handleClose}
-            />
-          </div>
-        )}
       </div>
       <div className="imageComponents3">
         <img alt="door" src="/images/Designer (3).jpeg" />
@@ -160,7 +163,6 @@ const Work = () => {
                 <img
                   alt="work"
                   src={workImage.src}
-                  onClick={() => handleClick(workImage.src)}
                 />
                 <h1>{workImage.title}</h1>
                 <h3>{workImage.price}</h3>
@@ -169,16 +171,6 @@ const Work = () => {
             </>
           );
         })}
-        {selectedImage && (
-          <div className="modal">
-            <span onClick={handleClose}>close</span>
-            <img
-              alt="full"
-              src={selectedImage}
-              onClick={() => handleClose}
-            />
-          </div>
-        )}
       </div>
       <div className="Gcolors">
         <img alt="colors" src="/images/Enamel.jpg" />
