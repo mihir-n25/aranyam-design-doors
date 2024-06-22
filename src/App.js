@@ -9,14 +9,14 @@ function App() {
   return (
     <>
      <Router>
-     <AnimatePresence mode="wait">
+     {/* <AnimatePresence mode="wait"> */}
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/work" element={<Work/>}/>
       <Route path="/contact" element={<Contact/>}/>
      </Routes>
-     </AnimatePresence>
+     {/* </AnimatePresence> */}
      </Router>
     </>
   );

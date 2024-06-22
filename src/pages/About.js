@@ -13,7 +13,6 @@ const About = () => {
   const isInView = useInView(description);
 
   return (
-    <Curve>
       <Main>
         <h1 className="text01">About Us</h1>
         <hr />
@@ -102,7 +101,6 @@ const About = () => {
           <img src="last.png" alt="last" className="last" />
         </div>
       </Main>
-    </Curve>
   );
 };
 
