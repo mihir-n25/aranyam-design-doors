@@ -36,12 +36,11 @@ export default function Curve({ children }) {
   }, []);
 
   return (
-    <div className="page curve" style={{ backgroundColor }}>
+    <div className="page curve">
       <div
         style={{ opacity: dimensions.width == null ? 1 : 0 }}
         className="background"
       />
-
 
       {dimensions.width != null && <SVG {...dimensions} />}
 
@@ -71,9 +70,51 @@ const SVG = ({ height, width }) => {
 
     `;
 
+    const curve = {
+        initial: {
+          d: initialPath,
+        },
+    
+        enter: {
+          d: targetPath,
+    
+          transition: { duration: 0.75, delay: 0.35, ease: [0.76, 0, 0.24, 1] },
+        },
+    
+        exit: {
+          d: initialPath,
+    
+          transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] },
+        },
+      };
+    
+    
+     const slide = {
+      initial: {
+        top: "-300px",
+      },
+    
+      enter: {
+        top: "-100vh",
+    
+        transition: { duration: 0.75, delay: 0.35, ease: [0.76, 0, 0.24, 1] },
+    
+        transitionEnd: {
+          top: "100vh",
+        },
+      },
+    
+      exit: {
+        top: "-300px",
+    
+        transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] },
+      },
+    };
+    
+
   return (
-    <motion.svg {...anim(translate)}>
-      <motion.path {...anim(curve(initialPath, targetPath))} />
+    <motion.svg {...anim(slide)}>
+      <motion.path {...anim(curve)}></motion.path>
     </motion.svg>
   );
 };
