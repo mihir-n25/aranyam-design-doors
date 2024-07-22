@@ -8,6 +8,8 @@ import PreLoader from "./Secondary/PreLoader";
 import {useInView , motion} from 'framer-motion'
 import { animateWithGsap } from "../components/Utils/animation_g";
 import { Link } from "react-router-dom";
+import Services from "./Secondary/Services";
+import Magnetic from "../components/Utils/Magnetic";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,12 +61,9 @@ const Home = () => {
     xPercent += 0.1 * direction;
   };
 
-  //animation
-  animateWithGsap(".para1" , {y : 0 , opacity : 1})
 
   return (
     <Main>
-      {/* {isLoading && <PreLoader />} */}
       <div className="main">
         <img src="Main.jpeg" alt="home1" />
         <div className="sliderContainer">
@@ -89,14 +88,10 @@ const Home = () => {
       </div>
       <div className="main02" ref={description} >
         <div className="text03">
-          <h1>
-            We made the purchase 
-            <br/>as simple and clear
-            <br/> as possible
-            </h1>
+
             <div style={{display : 'flex'}} >
           <p className="para1">
-          Step into a world where quality meets affordability effortlessly. Our doors boast superior craftsmanship and security without compromising on price. Elevate your home with our exquisite designs and unmatched value
+          Step into a world where quality meets affordability & standards in doors effortlessly. Our doors boast superior craftsmanship and security without compromising on price.
           </p>
           <p className="para1">
           Discover premium doors at unbeatable prices. Elevate your space with style and security, without breaking the bank.
@@ -104,11 +99,33 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h1 className="tp01">
-        Top Products
-        <hr />
-      </h1>
+<div style={{marginTop : "0rem"}}>
+      <Magnetic>
+          <button className="btn01">Work</button>
+        </Magnetic>
+        </div>
+      
+      <div className="service01">
+          <h1>Services</h1>
+          <Services />
+          <hr style={{margin : "auto" , maxWidth : "67%"}}/>
+        </div>
+
+        <div className="main02">
+        <div className="text03">
+
+            <div style={{display : 'flex' , marginTop : "-4rem" , marginBottom : "4rem"}} >
+          <p className="para1">
+          Step into a world where quality meets affordability & standards in doors effortlessly. Our doors boast superior craftsmanship and security without compromising on price.
+          </p>
+          <p className="para1">
+          Discover premium doors at unbeatable prices. Elevate your space with style and security, without breaking the bank.
+          </p>
+          </div>
+        </div>
+      </div>
       <SlidingImages />
+
       <div className="text101">
         <h4>FLAWLESS</h4>
         <h4>EXQUISITE</h4>
