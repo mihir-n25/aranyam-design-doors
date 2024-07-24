@@ -99,7 +99,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-<div style={{marginTop : "0rem"}}>
+<div style={{marginTop : "4rem"}}>
       <Magnetic>
           <button className="btn01">Work</button>
         </Magnetic>

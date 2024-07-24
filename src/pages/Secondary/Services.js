@@ -6,28 +6,28 @@ import Model from "./Model";
 function Services() {
   const projects = [
     {
-      title: "Hardware",
-      src: "/images/Designer (1).jpeg",
-      color: "#000000",
-      description: "yes we have hardware",
+      title: "Doors",
+      src: "/images/Designer (13).jpeg",
+      color: "#272343",
+      description: "We provide doors & other related things",
     },
     {
-      title: "Hardware",
-      src: "/images/Designer (3).jpeg",
-      color: "blue",
-      description: "yes we have hardware",
+      title: "Handles",
+      src: "/images/Designer (17).jpeg",
+      color: "#272343",
+      description: "All the equipment & hardwares regarding doors",
     },
     {
-      title: "Hardware",
-      src: "/images/Designer (4).jpeg",
-      color: "#000000",
-      description: "yes we have hardware",
+      title: "WallPanels",
+      src: "/images/Designer (29).jpeg",
+      color: "#272343",
+      description: "Customize wall panels with different shades",
     },
     {
-      title: "Hardware",
-      src: "/images/Designer (6).jpeg",
-      color: "#000000",
-      description: "yes we have hardware",
+      title: "Repair",
+      src: "/images/Designer (15).jpeg",
+      color: "#272343",
+      description: "Enhance security by renovate your doors",
     },
   ];
 
