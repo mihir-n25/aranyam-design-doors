@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SlidingImages from "./Secondary/SlidningImages";
 import PreLoader from "./Secondary/PreLoader";
-import {useInView , motion} from 'framer-motion'
+import { useInView, motion } from "framer-motion";
 import { animateWithGsap } from "../components/Utils/animation_g";
 import { Link } from "react-router-dom";
 import Services from "./Secondary/Services";
@@ -21,7 +21,7 @@ const Home = () => {
   let direction = -1;
 
   const description = useRef(null);
-  const isInView = useInView(description)
+  const isInView = useInView(description);
 
   useEffect(() => {
     (async () => {
@@ -61,7 +61,6 @@ const Home = () => {
     xPercent += 0.1 * direction;
   };
 
-
   return (
     <Main>
       <div className="main">
@@ -75,7 +74,10 @@ const Home = () => {
         <div className="location">
           <p>Located In Bhilwara</p>
           <Link to="/contact">
-          <i className="fa-solid fa-location-dot" style={{color : "black"}}/>
+            <i
+              className="fa-solid fa-location-dot"
+              style={{ color: "black" }}
+            />
           </Link>
         </div>
         <div className="home002">
@@ -86,42 +88,37 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="main02" ref={description} >
+      <div className="main02" ref={description}>
         <div className="text03">
-
-            <div style={{display : 'flex'}} >
-          <p className="para1">
-          Step into a world where quality meets affordability & standards in doors effortlessly. Our doors boast superior craftsmanship and security without compromising on price.
-          </p>
-          <p className="para1">
-          Discover premium doors at unbeatable prices. Elevate your space with style and security, without breaking the bank.
-          </p>
+          <div style={{ display: "flex" }}>
+            <p className="para1">
+              Step into a world where quality meets affordability & standards in
+              doors effortlessly. Our doors boast superior craftsmanship and
+              security without compromising on price.
+            </p>
+            <p className="para1">
+              Discover premium doors at unbeatable prices. Elevate your space
+              with style and security, without breaking the bank.
+            </p>
           </div>
         </div>
       </div>
-<div style={{marginTop : "4rem"}}>
-      <Magnetic>
+      <div style={{ marginTop: "4rem" }}>
+        <Magnetic>
           <button className="btn01">Work</button>
         </Magnetic>
-        </div>
-      
+      </div>
+
       <div className="service01">
-          <h1>Services</h1>
-          <Services />
-          <hr style={{margin : "auto" , maxWidth : "67%"}}/>
-        </div>
+        <h1>Services</h1>
+        <Services />
+        <hr style={{ margin: "auto", maxWidth: "67%" }} />
+      </div>
 
-        <div className="main02">
+      <div className="main02">
         <div className="text03">
-
-            <div style={{display : 'flex' , marginTop : "-4rem" , marginBottom : "4rem"}} >
-          <p className="para1">
-          Step into a world where quality meets affordability & standards in doors effortlessly. Our doors boast superior craftsmanship and security without compromising on price.
-          </p>
-          <p className="para1">
-          Discover premium doors at unbeatable prices. Elevate your space with style and security, without breaking the bank.
-          </p>
-          </div>
+          <h1 style={{textAlign : "center"}}>Top Products</h1>
+          <hr style={{margin : "auto" , maxWidth : "30%"}}/>
         </div>
       </div>
       <SlidingImages />

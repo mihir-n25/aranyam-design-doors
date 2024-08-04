@@ -123,7 +123,7 @@ const Contact = () => {
   <MapContainer
     center={[25.329202253283043, 74.64465265303431]}
     zoom={18}
-    // style={{ height: "100%", width: "100%" }} // Adjust map container style
+    style={{ height: "300%", width: "0%" }} 
   >
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
     <Marker position={[25.329202253283043, 74.64465265303431]} icon={customMarkerIcon}>

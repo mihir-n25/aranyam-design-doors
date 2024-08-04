@@ -5,30 +5,30 @@ import '../../components/Styles/SlidingImages.scss'
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "/images/Designer (1).jpeg"
+        src: "/images/Designer (30).jpeg"
     },
     {
         color: "#d6d7dc",
-        src: "/images/Designer.jpeg"
+        src: "/images/Designer (35).jpeg"
     },
     {
         color: "#e3e3e3",
-        src: "/images/Designer (3).jpeg"
+        src: "/images/Designer (27).jpeg"
     },
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "/images/Designer (8).jpeg"
+        src: "/images/Designer (34).jpeg"
     },
     {
         color: "#e5e0e1",
-        src: "/images/Designer (5).jpeg"
+        src: "/images/Designer (33).jpeg"
     },
     {
         color: "#d7d4cf",
-        src: "/images/Designer (6).jpeg"
+        src: "/images/Designer (32).jpeg"
     },
 ]
 

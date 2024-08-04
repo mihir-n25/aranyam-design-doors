@@ -73,18 +73,15 @@ const About = () => {
         <h1>About The Owner</h1>
         <hr style={{ marginBottom: "5rem" }} />
         <div className="owner01">
-          <img src="mihir.png" />
+          {/* <img src="mihir.png" /> */}
           <p>
             Inspired by a lifelong passion for <span>craftsmanship</span> and <span>innovation</span>, our
             founder envisioned a world where every <span>doorway</span> tells a story of
             <span> quality</span> and <span>sophistication</span>. With a relentless dedication to
             excellence, our owner leads by example, shaping the <span>future of door </span>
-            design and security with unwavering commitment and <span>vision</span>.
+            design and security with unwavering commitment and <span>vision</span>. Call <span>9078863923</span>.
           </p>
         </div>
-        <Magnetic>
-          <button className="btn02">9079011955</button>
-        </Magnetic>
       </div>
       <div
         style={{
